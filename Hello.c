@@ -3,5 +3,11 @@
 int main()
 {
     printf("Hello World!");
+
+    // using tab character
+    printf("\nHello World! \tHello World!");
+
+    // using new line character
+    printf("\nHello World! \nHello World!");
     return 0;
 }
