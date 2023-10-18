@@ -1,12 +1,21 @@
 #include <stdio.h>
 
 int main() {
-    int num, sum=0, r;
-    printf("Enter the number\n");
-    scanf("%d", &num);
-    while(num>0){
-        r=num%10;sum=sum+r;num=num/10}
-        printf("Sum %d", sum);
+    int n, first = 0, second = 1, next, i=0;
+
+    printf("Enter the number of terms: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci sequence up to %d terms:\n", n);
+    while( i < n) {
+        printf("%d ", first);
+        next = first + second;
+        first = second;
+        second = next;
+        i++;
+    }
+
+    printf("\n");
 
     return 0;
 }
